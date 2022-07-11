@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShobhitAgarwal_201510019_Live</title>
+
+
+
+
+<!-- Internal CSS Applied Here -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+        .logo
+        {
+            width: 80px;
+            height: 80px;
+            background-color: #feae96;
+            background-image: linear-gradient(315deg, #feae96 0%, #fe0944 74%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+        }
+        nav{
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: left;
+        }
+
+        ul{
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 80%;
+            display: flex;
+            justify-content: left;
+        }
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: gray;
+        }
+        a:hover{
+            color: red;
+        }
+        .banner{
+            height: 80vh;
+            width: 100%;
+        }
+        
+        footer{
+            height: 125px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #btn
+        {
+            width: 150px;
+                position:fixed;
+                top: 10px;
+                right: 0px;
+                color: red;
+                padding: 10px;
+                box-shadow: 1px 1px 3px gray;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
+        .back
+        {
+
+                float: right;
+                margin-top: 70px;
+                margin-right: 100px;
+                display: flex;
+                right: 0;
+                /* bottom: 0; */
+                position: absolute;
+                
+         }
+         .text{
+            margin-left: 50px;
+            margin-top: 160px;
+        }
+        .text .offer{
+            width: 250px;
+            border: 0.5px solid rgba(0, 0, 0, 0.344);
+            padding: 0 10px;
+        }
+        .text p span{
+            color: #ff2735;
+            
+        }
+        .text h1{
+            margin-top: 20px;
+            font-size: 75px;
+            color: rgba(0, 28, 62, 0.764);
+            font-weight: bold;
+            
+        }  
+        p{
+            color:rgba(61, 61, 61, 0.488);
+        }
+        .cap-p{
+            color:rgba(61, 61, 61, 0.488);
+        }     
+        
+            
+
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav id="nav">
+        <div class="logo">R</div>
+        <ul>
+            <li><a href="#home"> Home</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Elements</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Banner -->
+
+            
+
+            <div class="back">
+                <img src="https://wordpress.creativegigs.net/rogan/wp-content/plugins/rogan-core/widgets/images/shape/banner-shape1.svg" alt="">
+            </div>
+            <div class="text">
+
+                <p class="offer"> <span>70% Off </span>for first 3 months</p>
+                <h1>Digital Agency<br>
+                    with Excellence<br>
+                    Services.</h1>
+                    <p class="cap-p" style="font-size: 20px; margin-top: 40px; ">The 3 golden rules professional graphic designer don't</p>
+            </div>
+ 
+
+
+
+    <a href="#"><div id="btn">Buy Rogan --></div></a>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <h1 id="name"></h1>
+        <h1 id="uro"></h1>
+        <h1 id="col"></h1>
+        <h1 id="date"></h1>
+    </footer>
+
+
+
+    <!-- javaScript -->
+    <script>
+        document.getElementById("name").textContent='['+"Shobhit Agarwal" + ']';
+        document.getElementById("uro").textContent='['+"201510019"+']';
+        document.getElementById("col").textContent="GLA University, Mathura";
+        window.onload=date;
+        function date(){
+            var d=new Date().toLocaleDateString();
+            var l=d.split("/");
+            var day=l[1] ,month=l[0],year=l[2];
+            var date=day+"-"+month+"-"+year;
+        document.getElementById("date").textContent=`${date}`;
+        }
+    </script>
+
+
+
+
+</body>
+</html>
